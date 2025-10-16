@@ -1,0 +1,26 @@
+[project]
+name = "stockify"
+description = "Bitcoin-Native Tokenized US Stocks on Stacks"
+authors = ["Stockify Team"]
+telemetry = false
+cache_dir = "./.cache"
+requirements = []
+boot_contracts = []
+
+[contracts.sip-010-trait]
+path = "contracts/traits/sip-010-trait.clar"
+
+[contracts.stockify-core]
+path = "contracts/stockify-core.clar"
+
+[contracts.stock-token]
+path = "contracts/stock-token.clar"
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

@@ -1,0 +1,21 @@
+# Clarinet
+.cache/
+settings/
+deployments/
+
+# Build artifacts
+*.wasm
+*.clar.json
+
+# Logs
+*.log
+
+# Coverage
+coverage.lcov
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
